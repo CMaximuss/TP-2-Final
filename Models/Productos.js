@@ -5,6 +5,11 @@ class Productos extends Model {}
 
 Productos.init(
   {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+    },
     nombre: {
       type: DataTypes.STRING,
       allowNull: false,
