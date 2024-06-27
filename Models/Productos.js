@@ -30,7 +30,7 @@ Productos.init(
   },
   {
     sequelize: conexion,
-    modelName: "Producto",
+    modelName: "Productos",
   }
 );
 

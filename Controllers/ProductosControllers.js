@@ -33,9 +33,10 @@ class ProductosControllers {
 
   crearProducto= async (req, res) => {
     try {
-      const { nombre, precio, cantidad, descripcion } = req.body;
+      const {  id, nombre, precio, cantidad, descripcion } = req.body;
       
       const nuevoProducto = await Productos.create({
+        id,
         nombre,
         precio,
         cantidad,
