@@ -16,7 +16,7 @@ class ProductosControllers {
       
       res.status(200).send({ success: true, data: producto });
     } catch (error) {
-      console.error('Error al obtener producto:', error); // Log del error
+      console.error('Error al obtener producto:', error); 
       res.status(500).send({ success: false, message: error.message });
     }
   };
@@ -44,7 +44,7 @@ class ProductosControllers {
       
       res.status(201).send({ success: true, data: nuevoProducto });
     } catch (error) {
-      console.error('Error al crear producto:', error); // Log del error
+      console.error('Error al crear producto:', error); 
       res.status(500).send({ success: false, message: error.message });
     }
   };
@@ -73,7 +73,7 @@ actualizarProducto = async (req, res) => {
     
     res.status(200).send({ success: true, message: 'Producto actualizado exitosamente', data: producto });
   } catch (error) {
-    console.error('Error al actualizar producto:', error); // Log del error
+    console.error('Error al actualizar producto:', error); 
     res.status(500).send({ success: false, message: error.message });
   };
 }
@@ -94,7 +94,7 @@ eliminarUnProducto= async (req, res) => {
     
     res.status(200).send({ success: true, message: 'Producto eliminado exitosamente' });
   } catch (error) {
-    console.error('Error al eliminar producto:', error); // Log del error
+    console.error('Error al eliminar producto:', error);
     res.status(500).send({ success: false, message: error.message });
   }
 };
